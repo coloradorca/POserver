@@ -1,0 +1,22 @@
+{
+  "name": "poserver",
+  "version": "1.0.0",
+  "description": "ProductOverviewServer",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloradorca/POserver.git"
+  },
+  "author": "RobGonzalezPita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coloradorca/POserver/issues"
+  },
+  "homepage": "https://github.com/coloradorca/POserver#readme",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
