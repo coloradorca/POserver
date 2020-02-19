@@ -14,16 +14,12 @@ const pool = require('../db/config.js');
 const getProductList = async (request, response) => {
   const query = {
     name: 'fetch-productList',
-    text: 'SELECT * FROM product ORDER BY id ASC LIMIT $1;',
-    // if need to pass arguments to query, insert them into the values array below
-    // in text above, index #1 in values array is '$1' (i.e. 5), $2 is second index in values array below
-    values: [5],
+    text: 'select * FROM product ORDER BY id ASC LIMIT $1;',
+    values: [15],
   };
 
   pool
     .query(query)
-    //remove the newline character coming back from database
-    // .then((res) => res.json())
     .then((res) => response.send(res.rows))
     .catch((e) => console.error(e.stack));
 

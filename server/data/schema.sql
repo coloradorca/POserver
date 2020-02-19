@@ -1,10 +1,10 @@
 
-DROP DATABASE IF EXISTS productOverview;
+DROP DATABASE IF EXISTS example;
 
 
-create database productOverview;
+create database example;
 
-\c productOverview;
+\c example;
 
 
 CREATE TABLE product (id SERIAL PRIMARY KEY,
