@@ -1,9 +1,11 @@
-// const express = require('express')
+const getRelatedProducts = require('./relatedProducts.js');
+const getProductInformation = require('./productInformation.js');
+const getProductStyles = require('./productStyles.js');
+const getProductList = require('./productList.js');
 
-// const { blogpost } = require('../controllers')
-
-// const router = express.Router()
-
-// router.post('/blogpost', blogpost.postBlogpost)
-
-// module.exports = router
+module.exports = {
+  getProductList,
+  getProductStyles,
+  getProductInformation,
+  getRelatedProducts,
+};
