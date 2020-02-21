@@ -42,3 +42,16 @@ const getProductStylesPlayground = async (request, response) => {
 };
 
 module.exports = getProductStylesPlayground;
+
+// const getStyles = function(styles){
+//   let returnValue = {};
+//   returnValue['product_id'] = styles[0].product_id;
+//   returnValue.results = [{style_id : styles[0].style_id, name: styles[0].name, original_price : styles[0].original_price, sale_price : styles[0].sale_price, "default?" : styles[0].default_style, photos : []}];
+//   for(var i = 0; i < styles.length; i++){
+//     if(returnValue.results[0]['style_id'] !== styles[i].style_id)
+//     returnValue.results.push({style_id : styles[i].style_id, name: styles[i].name, original_price: styles[i].original_price, sale_price : styles[i].sale_price, "default?" : styles[i].default_style, photos: []})
+
+//   }
+
+//   return returnValue;
+// }
