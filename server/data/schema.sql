@@ -12,13 +12,13 @@ CREATE TABLE product (id SERIAL PRIMARY KEY,
                                                                                                 default_price INTEGER);
 
 
-CREATE TABLE styles (id SERIAL PRIMARY KEY,
-                                       productId INTEGER, name TEXT, sale_price TEXT, original_price INTEGER, default_style INTEGER,
+CREATE TABLE styles (style_id SERIAL PRIMARY KEY,
+                                             productId INTEGER, name TEXT, sale_price TEXT, original_price INTEGER, default_style INTEGER,
                      FOREIGN KEY (productId) REFERENCES product (id));
 
 
 CREATE TABLE features (id SERIAL PRIMARY KEY,
-                                         style_id INTEGER, val TEXT, attribute TEXT,
+                                         style_id INTEGER, feature TEXT, value TEXT,
                        FOREIGN KEY (style_id) REFERENCES styles (id));
 
 
