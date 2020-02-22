@@ -1,18 +1,6 @@
-// Product Styles
-// Returns the all styles available for the given product.
-
-// GET /products/:product_id/styles
-
-// Parameters
-
-// Parameter	Type	Description
-// product_id	integer	Required ID of the Product requested
-// Response
-
-// Status: 200 OK
 const pool = require('../db/config.js');
 
-const getProductStylesPlayground = async (request, response) => {
+const getProductStyles = async (request, response) => {
   const query = {
     name: 'fetch-styles',
     text:
@@ -23,12 +11,12 @@ const getProductStylesPlayground = async (request, response) => {
   pool
     .query(query)
     .then((res) => {
-      response.status(200).json(getStyles(res.rows));
+      response.status(200).send(getStyles(res.rows));
     })
     .catch((e) => console.error(e.stack));
 };
 
-module.exports = getProductStylesPlayground;
+module.exports = getProductStyles;
 
 const getStyles = function(styles) {
   let finalValue = {};

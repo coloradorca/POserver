@@ -1,12 +1,3 @@
-// List Products
-// GET /products/list Retrieves the list of products.
-
-// Parameters
-// Parameter	Type	Description
-// page	integer	Selects the page of results to return. Default 1.
-// count	integer	Specifies how many results per page to return. Default 5.
-// Response:  Status: 200 OK
-
 const pool = require('../db/config.js');
 
 const getProductList = async (request, response) => {

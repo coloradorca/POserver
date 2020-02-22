@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.get('/products/list', routes.getProductList);
 app.get('/products/:product_id/styles', routes.getProductStyles);
-app.get('/products/:product_id/styles', routes.getProductStylesPlayground);
+app.get('/products/:product_id', routes.getProductInformation);
 app.get('/products/:product_id/related', routes.getRelatedProducts);
 
 const port = 3000;

@@ -1,14 +1,3 @@
-// Product Information
-// Returns all product level information for a specified product id.
-
-// GET /products/:product_id
-
-// Parameters
-
-// Parameter	Type	Description
-// product_id	integer	Required ID of the Product requested
-// Response:  Status: 200 OK
-
 const pool = require('../db/config.js');
 
 const getProductInformation = async (request, response) => {
@@ -21,7 +10,7 @@ const getProductInformation = async (request, response) => {
   pool
     .query(query)
     .then((res) =>
-      response.send({
+      response.status(200).send({
         id: res.rows[0].id,
         name: res.rows[0].name,
         slogan: res.rows[0].slogan,
@@ -35,8 +24,6 @@ const getProductInformation = async (request, response) => {
       }),
     )
     .catch((e) => console.error(e.stack));
-
-  // response.sendStatus(200);
 };
 
 module.exports = getProductInformation;
