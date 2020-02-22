@@ -1,3 +1,4 @@
+const newrelic = require('newrelic');
 const express = require('express');
 const db = require('./server/db/config.js');
 //import routes

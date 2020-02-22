@@ -1,8 +1,6 @@
 *.csv
 .DS_Store
 node_modules/
-*.icloud
-/dummyData
 server/data/dummyData
-/sampleData
 server/data/sampleData
+newrelic.js

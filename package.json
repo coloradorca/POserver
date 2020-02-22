@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "start:dev": "nodemon app.js",
-    "test": "test"
+    "test": "test",
+    "artillery": "artillery run artillery.yml"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "faker": "^4.1.0",
+    "newrelic": "^6.4.1",
     "pg": "^7.18.1"
   }
 }
