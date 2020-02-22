@@ -7,9 +7,8 @@ const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-app.get('/products/list', routes.getProductList); //optional PARAMS: page, count? where to implement this logic?
-app.get('/products/:product_id', routes.getProductInformation);
-// app.get('/products/:product_id/styles', routes.getProductStyles);
+app.get('/products/list', routes.getProductList);
+app.get('/products/:product_id/styles', routes.getProductStyles);
 app.get('/products/:product_id/styles', routes.getProductStylesPlayground);
 app.get('/products/:product_id/related', routes.getRelatedProducts);
 
