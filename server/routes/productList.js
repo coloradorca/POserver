@@ -4,7 +4,7 @@ const getProductList = async (request, response) => {
   const query = {
     name: 'fetch-productList',
     text: 'select * FROM product ORDER BY id ASC LIMIT $1;',
-    values: [5],
+    values: [50],
   };
 
   pool
