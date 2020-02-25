@@ -8,9 +8,9 @@ config:
       rampTo: 500
     - duration: 5
       arrivalRate: 500
-      rampTo: 1000
-    - duration: 10
-      arrivalRate: 1000
+    #   rampTo: 1000
+    # - duration: 10
+    #   arrivalRate: 1000
     #   rampTo: 1000
     # - duration: 10
     #   arrivalRate: 1000
@@ -22,8 +22,13 @@ scenarios:
   - flow:
       # - get:
       #     url: '/products/list'
-      # - log: '{{$randomNumber(1,10000)}}'
       # - get:
       #     url: '/products/{{$randomNumber(1,1000)}}'
       - get:
           url: '/products/{{$randomNumber(1,1000)}}/styles'
+
+      # - log: '{{$randomNumber(1,10000)}}'
+
+      # non functional endpoint but used here to test 10M records in DB
+      # - get:
+      #     url: '/products/10000000/related'

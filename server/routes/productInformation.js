@@ -9,7 +9,7 @@ const getProductInformation = async (request, response) => {
   };
   pool
     .query(query)
-    .then((res) =>
+    .then((res) => {
       response.status(200).send({
         id: res.rows[0].id,
         name: res.rows[0].name,
@@ -21,8 +21,9 @@ const getProductInformation = async (request, response) => {
           feature: el.feature,
           value: el.value,
         })),
-      }),
-    )
+      })
+    })
+
     .catch((e) => console.error(e.stack));
 };
 
