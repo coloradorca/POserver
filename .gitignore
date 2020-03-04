@@ -5,4 +5,5 @@ server/data/dummyData
 server/data/sampleData
 newrelic.js
 *.env
-.newrelic_agent.log
+*.log
+package-lock.json
