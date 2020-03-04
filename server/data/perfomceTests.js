@@ -9,7 +9,7 @@ doSomething = (num) => {
 
 var t0 = performance.now();
 
-doSomething(1111112); // <---- The function you're measuring time for
+doSomething(1111112);
 
 var t1 = performance.now();
 

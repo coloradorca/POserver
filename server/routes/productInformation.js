@@ -21,7 +21,7 @@ const getProductInformation = async (request, response) => {
           feature: el.feature,
           value: el.value,
         })),
-      })
+      });
     })
 
     .catch((e) => console.error(e.stack));

@@ -20,15 +20,13 @@ config:
 
 scenarios:
   - flow:
-      # - get:
-      #     url: '/products/list'
-      # - get:
-      #     url: '/products/{{$randomNumber(1,1000)}}'
-      # - get:
-      #     url: '/products/{{$randomNumber(1,1000)}}/styles'
-
-      # - log: '{{$randomNumber(1,10000)}}'
-
-      # non functional endpoint but used here to test 10M records in DB
       - get:
-          url: '/products/10000000/related'
+          url: '/products/list'
+      - get:
+          url: '/products/{{$randomNumber(1,1000)}}'
+      - get:
+          url: '/products/{{$randomNumber(1,1000)}}/styles'
+      # - log: '{{$randomNumber(1,10000)}}'
+      # non functional endpoint but used here to test 10M records in DB
+      # - get:
+      #     url: '/products/10000000/related'

@@ -1,5 +1,5 @@
 const Pool = require('pg').Pool;
-// connection information
+// connection to the Postgres DB
 const pool = new Pool({
   user: 'robgonzalez-pita',
   host: 'localhost',
@@ -8,8 +8,7 @@ const pool = new Pool({
   port: 5432,
 });
 
-
-//ec2 instance connected
+//ec2 instance connection
 // const pool = new Pool({
 //   user: 'postgres',
 //   host: '3.16.10.167',
@@ -17,8 +16,5 @@ const pool = new Pool({
 //   password: 'hello',
 //   port: 5432,
 // });
-
-
-
 
 module.exports = pool;
