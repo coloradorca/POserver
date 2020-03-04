@@ -1,8 +1,7 @@
-# POserver
+# Product Overview Server
 
 Back end to the Product Overview module of the UglyDogStore
 
-Serves API routes
-SQL scripts to populate DB
+Serves up API routes using a Node Express Server
 
-Node Express Service to database
+SQL scripts to populate a Postgres DB
