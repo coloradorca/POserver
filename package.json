@@ -7,7 +7,7 @@
     "start": "node app.js",
     "start:dev": "nodemon app.js",
     "test": "test",
-    "artillery": "artillery run artillery.yml"
+    "artillery": "artillery run ./server/artillery.yml"
   },
   "repository": {
     "type": "git",

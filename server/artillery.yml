@@ -1,16 +1,16 @@
 config:
-  target: 'http://uglydogstore.surge.sh/'
+  target: 'http://localhost:3000/'
   http:
     timeout: 5
   phases:
     - duration: 10
       arrivalRate: 50
       rampTo: 100
-    - duration: 10
-      arrivalRate: 100
-      rampTo: 500
-    - duration: 10
-      arrivalRate: 500
+    # - duration: 10
+    #   arrivalRate: 100
+    #   rampTo: 500
+    # - duration: 10
+    #   arrivalRate: 500
     #   rampTo: 1000
     # - duration: 10
     #   arrivalRate: 1000
