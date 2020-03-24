@@ -1,4 +1,4 @@
-# Product Overview Server
+# Product Overview API
 
 RESTful API to the Product Overview module of the UglyDogStore which can be found here: http://uglydogstore.surge.sh/ .  
 
